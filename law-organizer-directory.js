@@ -55,7 +55,6 @@
      var cardHeader = '<h4 class="card-header">' + firstName + ' ' + lastName + '</h4>';
      var beginningHTML = '<div class="StaffListBox contentItem card w-100 border-0" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
      var endingHTML = '</div>';
-     var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
 
 
@@ -89,7 +88,6 @@
     document.write(openHiddenFields);
     document.write(hiddenFields);
     document.write(closeHiddenFields);
-    document.write(horizontalRule);
     document.write(endingHTML);
 
 
