@@ -62,39 +62,32 @@
      var hiddenFields = '';
      var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
      var closeHiddenFields = '</div>';
+     var emailAddressString = '<p class="card-link email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+     var primaryTitleString = '<p class="card-text title">' + primaryTitle + '</p>';
+     var departmentString = '<p class="card-text division">' + department + '</p>';
+     var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
+     var phoneString = '<p class="card-text phone">' + phone + '</p>';
+     var openCardBody = '<div class="card-body">';
+     var closeCardBody = '</div>';
+     var cardTitle = '<h4 class="card-title">' + firstName + ' ' + lastName + '</h4>';
+     var beginningHTML = '<div class="StaffListBox contentItem card w-100 border-0" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+     var endingHTML = '</div>';
+     var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
 
 
-    var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
-    
+    // var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
     // var closeCardTitle = '</h4>';
-
-
-
-
-
-    var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
-    var closeBodyWrapper = '</div>';
-    var openImageWrapper = '<div class="col-md-4">';
-    var closeImageWrapper = '</div>';
-    var openRow = '<div class="row g-0">';
-    var closeRow = '</div>';
+    // var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
+    // var closeBodyWrapper = '</div>';
+    // var openImageWrapper = '<div class="col-md-4">';
+    // var closeImageWrapper = '</div>';
+    // var openRow = '<div class="row g-0">';
+    // var closeRow = '</div>';
     // var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
 
 
-    var emailAddressString = '<p class="card-link email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
-    var primaryTitleString = '<p class="card-text title">' + primaryTitle + '</p>';
-    var departmentString = '<p class="card-text division">' + department + '</p>';
-    var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
-    var phoneString = '<p class="card-text phone">' + phone + '</p>';
-    var openCardBody = '<div class="card-body">';
-    var closeCardBody = '</div>';
-    var cardTitle = '<h4 class="card-title">' + firstName + ' ' + lastName + '</h4>';
-    var beginningHTML = '<div class="StaffListBox contentItem card w-100 border-0" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
-    var endingHTML = '</div>';
 
-
-    var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
 
 
