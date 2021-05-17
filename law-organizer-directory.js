@@ -59,32 +59,6 @@
 
 
 
-    // var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
-    // var closeCardTitle = '</h4>';
-    // var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
-    // var closeBodyWrapper = '</div>';
-    // var openImageWrapper = '<div class="col-md-4">';
-    // var closeImageWrapper = '</div>';
-    // var openRow = '<div class="row g-0">';
-    // var closeRow = '</div>';
-    // var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
-
-
-
-
-
-
-
-    /***
-     *  determine if the article contains full text content
-     * 
-     * */
-    // if (biography != "") {
-    //     cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start"><a href="' + fullTextLink + '" title="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">' + firstName + ' ' + lastName + '</a></h3>';
-    // }
-
-
-
 
     /***
      *  write hidden search fields
