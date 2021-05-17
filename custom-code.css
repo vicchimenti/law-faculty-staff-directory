@@ -1,0 +1,136 @@
+input.form-control, select.form-control{
+    max-width:700px;
+    background-color: #f7f7f7 !important;
+    border-radius: 0px !important;
+    box-shadow: none;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    height: inherit;
+    padding: 10px 15px;
+}
+#directorySearchButton{
+    background-color: #aa0000;
+    border: none;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    height: 40px;
+    border-radius: 2px;
+    margin-bottom:45px;
+padding: 0 15px;
+}
+
+#directorySearchButton:hover, #directorySearchButton:focus{
+    color: #333333;
+    background-color: #fdb913;
+    border:none;
+}
+#directorySearchButton:active{
+    color: #ffffff;
+    background-color: #cc0000;
+    border:none;
+}
+.form-group label{
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.StaffListBox {
+    margin-bottom: 45px;
+  }
+
+  .StaffListBox h4{
+    color: #aa0000;
+    font-size: 2.4rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+
+  .StaffListBox div {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .StaffListBox a{
+    color: #333333;
+    text-decoration: underline;
+  }
+
+  .StaffListBox a:hover, .StaffListBox a:focus{
+    color: #aa0000;
+  }
+
+
+
+
+#directoryPaginationWrapper{
+
+}
+#directoryPaginationWrapper ul{
+    display: inline-block;
+}
+
+#directoryPaginationWrapper ul li {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+}
+#directoryPaginationWrapper ul li:before {
+    content: '';
+}
+#directoryPaginationWrapper ul li a{
+    background: #666666;
+    border-radius: 20px;
+    color: #ffffff;
+    display: inline-block;
+    height: 3rem;
+    text-decoration:none;
+    width: 3rem;
+}
+#directoryPaginationWrapper ul li.currentPage a{
+    background: #aa0000;
+}
+#directoryPaginationWrapper ul li a:hover, #directoryPaginationWrapper ul li a:focus{
+    background: #088099;
+}
+
+/* ab */
+#directoryPaginationWrapper  .StaffListBox h4{
+    font-size: 1.8rem;
+}
+#directoryPaginationWrapper .StaffListBox .title {
+   font-weight: bold;
+}
+
+#directoryPaginationWrapper input#directorySearchButton {
+   border-radius: 0;
+}
+#directoryPaginationWrapper input#directorySearchButton:hover {
+   background-color:#088099;
+   color:#fff;
+}
+
+#directoryPaginationWrapper label {
+   padding-bottom: 1rem;
+}
+#directoryPaginationWrapper {
+   border-top:1px solid #e0e0e0;
+}
+#directoryPaginationWrapper ul {
+   margin-left: 0;
+}
+
+#directoryPaginationWrapper ul li.currentPage a {
+   background: none;
+   color: #333;
+}
+#directoryPaginationWrapper ul li a {
+   background: none;
+   color: #088099;
+}
+#directoryPaginationWrapper ul li a:hover {
+   background: none;
+   color: #aa0000;
+}
