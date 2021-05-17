@@ -93,18 +93,6 @@
     document.write(endingHTML);
 
 
-    // document.write(openRow);
-    // document.write(openImageWrapper);
-    // document.write(primaryImageString);
-    // document.write(closeImageWrapper);
-    // document.write(primaryTitleString);
-    // document.write(emailAddressString);
-    // document.write(closeBodyWrapper);
-    // document.write(closeRow);
-
-
-
-
 
 
 } catch (err) {
