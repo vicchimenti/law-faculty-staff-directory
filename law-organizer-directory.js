@@ -63,11 +63,16 @@
     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     var closeHiddenFields = '</div>';
     var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
-    var primaryTitleString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + primaryTitle + '</p>';
     
     // var closeCardTitle = '</h4>';
 
-    var emailAddressString = '<p class="card-text d-flex justify-content-center justify-content-md-start text-center text-md-start"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+    var emailAddressString = '<p class="card-link"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+    var primaryTitleString = '<p class="card-text title">' + primaryTitle + '</p>';
+    var departmentString = '<p class="card-text division">' + department + '</p>';
+    var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
+
+
+
     var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
     var closeBodyWrapper = '</div>';
     var openImageWrapper = '<div class="col-md-4">';
