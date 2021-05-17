@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 4.5
+ *      @version 4.6
  */
 
 
@@ -45,11 +45,11 @@
      var hiddenFields = '';
      var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
      var closeHiddenFields = '</div>';
-     var emailAddressString = '<p class="card-link email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
-     var titleString = '<p class="card-title title">' + title + '</p>';
-     var departmentString = '<p class="card-text division">' + department + '</p>';
-     var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
-     var phoneString = '<p class="card-text phone">' + phone + '</p>';
+     var emailAddressString = '<p class="card-link mb-0 email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+     var titleString = '<p class="card-title mb-0 title">' + title + '</p>';
+     var departmentString = '<p class="card-text mb-0 division">' + department + '</p>';
+     var streetAddressString = '<p class="card-text mb-0 address">' + streetAddress + '</p>';
+     var phoneString = '<p class="card-text mb-0 phone">' + phone + '</p>';
      var openCardBody = '<div class="card-body">';
      var closeCardBody = '</div>';
      var cardHeader = '<h4 class="card-header border-0">' + firstName + ' ' + lastName + '</h4>';
