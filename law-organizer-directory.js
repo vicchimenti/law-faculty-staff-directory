@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 4.1
+ *      @version 4.2
  */
 
 
@@ -96,9 +96,9 @@
      *  determine if the article contains full text content
      * 
      * */
-    if (biography != "") {
-        cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start"><a href="' + fullTextLink + '" title="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">' + firstName + ' ' + lastName + '</a></h3>';
-    }
+    // if (biography != "") {
+    //     cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start"><a href="' + fullTextLink + '" title="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">' + firstName + ' ' + lastName + '</a></h3>';
+    // }
 
 
 
