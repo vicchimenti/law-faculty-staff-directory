@@ -59,17 +59,17 @@
      *  Declare/Assign local variables with base formatting
      * 
      * */
-    var hiddenFields = '';
-    var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
-    var closeHiddenFields = '</div>';
+     var hiddenFields = '';
+     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
+     var closeHiddenFields = '</div>';
+
+
+
     var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
     
     // var closeCardTitle = '</h4>';
 
-    var emailAddressString = '<p class="card-link"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
-    var primaryTitleString = '<p class="card-text title">' + primaryTitle + '</p>';
-    var departmentString = '<p class="card-text division">' + department + '</p>';
-    var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
+
 
 
 
@@ -81,6 +81,12 @@
     var closeRow = '</div>';
     // var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
 
+
+    var emailAddressString = '<p class="card-link email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+    var primaryTitleString = '<p class="card-text title">' + primaryTitle + '</p>';
+    var departmentString = '<p class="card-text division">' + department + '</p>';
+    var streetAddressString = '<p class="card-text address">' + streetAddress + '</p>';
+    var phoneString = '<p class="card-text phone">' + phone + '</p>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
     var cardTitle = '<h4 class="card-title">' + firstName + ' ' + lastName + '</h4>';
@@ -108,42 +114,42 @@
      *  write hidden search fields
      * 
      * */
-    // if (secondaryTitle != "") {
-    //     var secondaryTitleHidden = '<span class="visually-hidden secondaryTitle">' + secondaryTitle + '</span>';
-    //     hiddenFields += secondaryTitleHidden;
-    // }
-    // if (education != "") {
-    //     var educationHidden = '<span class="visually-hidden education">' + education + '</span>';
-    //     hiddenFields += educationHidden;
-    // }
-    // if (expertise != "") {
-    //     var expertiseHidden = '<span class="visually-hidden expertise">' + expertise + '</span>';
-    //     hiddenFields += expertiseHidden;
-    // }
-    // if (affiliations != "") {
-    //     var affiliationsHidden = '<span class="visually-hidden affiliations">' + affiliations + '</span>';
-    //     hiddenFields += affiliationsHidden;
-    // }
-    // if (courses != "") {
-    //     var coursesHidden = '<span class="visually-hidden courses">' + courses + '</span>';
-    //     hiddenFields += coursesHidden;
-    // }
-    // if (biography != "") {
-    //     var biographyHidden = '<span class="visually-hidden biography">' + biography + '</span>';
-    //     hiddenFields += biographyHidden;
-    // }
-    // if (publications != "") {
-    //     var publicationsHidden = '<span class="visually-hidden publications">' + publications + '</span>';
-    //     hiddenFields += publicationsHidden;
-    // }
-    // if (activity != "") {
-    //     var activityHidden = '<span class="visually-hidden activity">' + activity + '</span>';
-    //     hiddenFields += activityHidden;
-    // }
-    // if (facultyStatus != "") {
-    //     var facultyStatusyHidden = '<span class="visually-hidden facultyStatus">' + facultyStatus + '</span>';
-    //     hiddenFields += facultyStatusyHidden;
-    // }
+    if (affiliation != "") {
+        var affiliationHidden = '<span class="visually-hidden affiliation">' + affiliation + '</span>';
+        hiddenFields += affiliationHidden;
+    }
+    if (education != "") {
+        var educationHidden = '<span class="visually-hidden education">' + education + '</span>';
+        hiddenFields += educationHidden;
+    }
+    if (expertise != "") {
+        var expertiseHidden = '<span class="visually-hidden expertise">' + expertise + '</span>';
+        hiddenFields += expertiseHidden;
+    }
+    if (affiliations != "") {
+        var affiliationsHidden = '<span class="visually-hidden affiliations">' + affiliations + '</span>';
+        hiddenFields += affiliationsHidden;
+    }
+    if (courses != "") {
+        var coursesHidden = '<span class="visually-hidden courses">' + courses + '</span>';
+        hiddenFields += coursesHidden;
+    }
+    if (biography != "") {
+        var biographyHidden = '<span class="visually-hidden biography">' + biography + '</span>';
+        hiddenFields += biographyHidden;
+    }
+    if (publications != "") {
+        var publicationsHidden = '<span class="visually-hidden publications">' + publications + '</span>';
+        hiddenFields += publicationsHidden;
+    }
+    if (activity != "") {
+        var activityHidden = '<span class="visually-hidden activity">' + activity + '</span>';
+        hiddenFields += activityHidden;
+    }
+    if (facultyStatus != "") {
+        var facultyStatusyHidden = '<span class="visually-hidden facultyStatus">' + facultyStatus + '</span>';
+        hiddenFields += facultyStatusyHidden;
+    }
 
 
 
