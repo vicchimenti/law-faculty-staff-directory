@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 4.3
+ *      @version 4.4
  */
 
 
@@ -77,7 +77,7 @@
      * 
      * */
     document.write(beginningHTML);
-    document.write(anchorWrap);
+    document.write(anchorTag);
     document.write(cardHeader);
     document.write(openCardBody);
     document.write(titleString);
