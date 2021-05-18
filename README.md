@@ -2,4 +2,5 @@
 
 ## TODO
 
--[] create external content syncer
+- [x] create external content syncer
+- [] create career output file
