@@ -1,5 +1,5 @@
 /***
- *  law/organizer/suLawInTheNews
+ *  law/organizer/directory
  * 
  */
 
@@ -8,7 +8,7 @@
  *  declare and assign topic layout
  * 
  */
-var fieldToBeEvaluated = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Category" output="normal" display_field="value" delimiter=";" />');
+var fieldToBeEvaluated = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Department" output="normal" modifiers="striptags,htmlentities,js-var" />');
 var optionToTestFor = "School of Law"; //edit this to change the option
 var contentTypeLayout = 'output/career'; //edit this to change the Content Layout to use for output
 var n = fieldToBeEvaluated.indexOf(optionToTestFor); /* determines starting character of string */
