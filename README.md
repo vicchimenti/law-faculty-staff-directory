@@ -3,4 +3,5 @@
 ## TODO
 
 - [x] create external content syncer
-- [] create career output file
+- [x] create career output file
+- [] add logic to handle undefined data fields
