@@ -75,47 +75,47 @@ $(function () {
 
 
             //   ***   Region Filter   ***  //
-            $(function () {
-                $('#SelectBox-ByRegion').change(function () {
-                    let typeKey = $(this).val();
-                    if (typeKey) {
-                        $('.region').filter(function (i, e) {
-                            var typeValue = $(this).text();
-                            if (typeValue.match(typeKey)) {
-                                $(this).parents('.externshipWrapper').removeClass('hideByRegion');
-                            } else {
-                                $(this).parents('.externshipWrapper').addClass('hideByRegion');
-                            }
-                        });
-                    } else {
-                        $('.externshipWrapper').removeClass('hideByRegion');
-                    }
-                    parseItems.process();
-                });
-            });
+            // $(function () {
+            //     $('#SelectBox-ByRegion').change(function () {
+            //         let typeKey = $(this).val();
+            //         if (typeKey) {
+            //             $('.region').filter(function (i, e) {
+            //                 var typeValue = $(this).text();
+            //                 if (typeValue.match(typeKey)) {
+            //                     $(this).parents('.externshipWrapper').removeClass('hideByRegion');
+            //                 } else {
+            //                     $(this).parents('.externshipWrapper').addClass('hideByRegion');
+            //                 }
+            //             });
+            //         } else {
+            //             $('.externshipWrapper').removeClass('hideByRegion');
+            //         }
+            //         parseItems.process();
+            //     });
+            // });
 
 
 
 
             //   ***   Type Filter   ***  //
-            $(function () {
-                $('#SelectBox-ByType').change(function () {
-                    let typeKey = $(this).val();
-                    if (typeKey) {
-                        $('.externshipType').filter(function (i, e) {
-                            var typeValue = $(this).text();
-                            if (typeValue.match(typeKey)) {
-                                $(this).parents('.externshipWrapper').removeClass('hideByType');
-                            } else {
-                                $(this).parents('.externshipWrapper').addClass('hideByType');
-                            }
-                        });
-                    } else {
-                        $('.externshipWrapper').removeClass('hideByType');
-                    }
-                    parseItems.process();
-                });
-            });
+            // $(function () {
+            //     $('#SelectBox-ByType').change(function () {
+            //         let typeKey = $(this).val();
+            //         if (typeKey) {
+            //             $('.externshipType').filter(function (i, e) {
+            //                 var typeValue = $(this).text();
+            //                 if (typeValue.match(typeKey)) {
+            //                     $(this).parents('.externshipWrapper').removeClass('hideByType');
+            //                 } else {
+            //                     $(this).parents('.externshipWrapper').addClass('hideByType');
+            //                 }
+            //             });
+            //         } else {
+            //             $('.externshipWrapper').removeClass('hideByType');
+            //         }
+            //         parseItems.process();
+            //     });
+            // });
             
 
 
