@@ -27,3 +27,17 @@
     padding: 30px;
     margin: 15px;
 }
+
+
+
+
+/* Small devices (landscape phones, 767 and down) */
+@media screen and (max-width: 767.99px) {
+    #filterField {
+        margin-top: 1rem;
+    }
+    h2.organizerTitle {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+}
