@@ -37,7 +37,7 @@ $(function () {
             $(function () {
                 let parseItemsToDisplay = function() {
                     // assign array of currently visible content items
-                    visibleItems = $('.externshipWrapper').not('.hideByText, .hideByType, .hideByRegion');
+                    visibleItems = $('.StaffListBox').not('.hideByText');
                     // check to see if array is empty
                     if (visibleItems.length == 0) {
                         // when array is empty show the results message
@@ -61,7 +61,7 @@ $(function () {
                     let keyword = $(this).val().toLowerCase();
                     // filter the items for the input key
                     $(function () {
-                        $('.externshipWrapper').filter(function () {
+                        $('.StaffListBox').filter(function () {
                             // when the search key is not present in the item then hide the item
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(keyword) > -1));
                         });
@@ -73,7 +73,7 @@ $(function () {
             
 
 
-            
+
         }, 10);
     });
 });
