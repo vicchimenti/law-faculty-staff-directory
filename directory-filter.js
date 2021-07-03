@@ -1,15 +1,15 @@
 <script>
 /***
 *   @author Victor Chimenti, MSCS-SE '20
-*   @file externship-filter.js
+*   @file directory-filter.js
 *
 *   jQuery
-*   This script searches the Externship Database content items for matches to the
-*   user selected search parameters in the filter field dropdown menus
+*   This script searches the Law School Faculty and Staff Directory content
+*   items for matches to the user selected search imput
 *
 *   This custom system replaces the depreciated jQuery Quicksearch
 *
-*   @version 4.8
+*   @version 5.0
 */
 
 
