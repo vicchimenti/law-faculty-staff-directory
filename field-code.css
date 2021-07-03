@@ -38,6 +38,6 @@
     }
     h2.organizerTitle {
         font-size: 2rem;
-        margin-left: 2rem;
+        padding-left: 16px;
     }
 }
