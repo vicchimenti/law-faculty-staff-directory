@@ -74,7 +74,6 @@ try {
      * 
      * */
     document.write(beginningHTML);
-    document.write(anchorTag);
     document.write(cardHeader);
     document.write(openCardBody);
     document.write(titleString);
