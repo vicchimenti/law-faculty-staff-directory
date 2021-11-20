@@ -8,7 +8,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.4
+ *      @version 5.5
  */
 
 
@@ -50,7 +50,7 @@ try {
     var phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
-    var cardHeader = '<h4 class="card-header border-0">' + firstName + ' ' + lastName + '</h4>';
+    var cardHeader = '<h3 class="card-header border-0">' + firstName + ' ' + lastName + '</h3>';
     var beginningHTML = '<article class="StaffListBox card w-100 border-0" id="directory' + contentID + '" aria-label="' + firstName + ' ' + lastName + '">';
     var endingHTML = '</article>';
 
