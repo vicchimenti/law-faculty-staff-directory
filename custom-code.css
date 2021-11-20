@@ -41,7 +41,7 @@ padding: 0 15px;
     margin-bottom: 45px;
   }
 
-  .StaffListBox h4{
+  .StaffListBox h4 {
     color: #aa0000;
     font-size: 2.4rem;
     font-family: "Montserrat", sans-serif;
@@ -53,21 +53,37 @@ padding: 0 15px;
     line-height: 2.4rem;
   }
 
-  .StaffListBox a{
-    color: #333333;
+  .StaffListBox a {
+    color: #088099;
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .StaffListBox a:hover {
+    color: #088099;
+    text-decoration: underline;
+  }
+  
+  .StaffListBox a:focus {
+    color: #088099;
     text-decoration: underline;
   }
 
-  .StaffListBox a:hover, .StaffListBox a:focus{
+  /* .StaffListBox a {
+    color: #333333;
+    text-decoration: underline;
+  } */
+
+  /* .StaffListBox a:hover, .StaffListBox a:focus{
     color: #aa0000;
-  }
+  } */
 
 
 
 
-#directoryPaginationWrapper{
 
-}
 #directoryPaginationWrapper ul{
     display: inline-block;
 }
