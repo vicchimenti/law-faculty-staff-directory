@@ -1,11 +1,10 @@
 /***
- *      @author Victor Chimenti, MSCS-SE '20
- *      @file output-career.js
+ *      @author Victor Chimenti, MSCS
  *      @see Seattle University School of Law Directory Profile Type
- *      output/career
- *
- *      This content layout will be the organizer layout and will link to the
- *      full text layout to reveal the full article.
+ *      @file output-career.js
+ *          Law - Directory Profile for Faculty-Staff
+ *          ID: 5548
+ *          output/career
  *
  *      Document will write once when the page loads
  *
