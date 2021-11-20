@@ -53,8 +53,8 @@ try {
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
     var cardHeader = '<h4 class="card-header border-0">' + firstName + ' ' + lastName + '</h4>';
-    var beginningHTML = '<div class="StaffListBox contentItem card w-100 border-0" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
-    var endingHTML = '</div>';
+    var beginningHTML = '<article class="StaffListBox contentItem card w-100 border-0" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var endingHTML = '</article>';
 
 
 
