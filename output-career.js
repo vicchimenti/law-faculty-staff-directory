@@ -185,6 +185,35 @@ try {
 
 
 
+
+    /***
+     *  write document once
+     * 
+     * */
+        writeDocument(
+        [
+            beginningHTML,
+            openRow,
+            openImageWrapper,
+            imageString,
+            closeImageWrapper,
+            openBodyWrapper,
+            openBody,
+            titleLink,
+            titleString,
+            subtitleString,
+            summaryBioString,
+            closeBody,
+            closeBodyWrapper,
+            closeRow,
+            endingHTML
+        ]
+    );
+
+
+
+
+
 } catch (err) {
     document.write(err.message);
 }
