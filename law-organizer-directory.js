@@ -4,6 +4,16 @@
  */
 
 
+
+
+/***
+ *      Import T4 Utilities
+ */
+importClass(com.terminalfour.publish.utils.BrokerUtils);
+
+
+
+
 /***
  *  declare and assign topic layout
  * 
@@ -12,6 +22,30 @@ var fieldToBeEvaluated = com.terminalfour.publish.utils.BrokerUtils.processT4Tag
 var optionToTestFor = "School of Law"; //edit this to change the option
 var contentTypeLayout = 'output/career'; //edit this to change the Content Layout to use for output
 var n = fieldToBeEvaluated.indexOf(optionToTestFor); /* determines starting character of string */
+
+
+ 
+ 
+ 
+ 
+/***
+ *      Extract values from T4 element tags
+ *      and confirm valid existing content item field
+ */
+function getContentValues(tag) {
+    try {
+        let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
+        return {
+            isError: false,
+            content: _tag == '' ? null : _tag
+        }
+    } catch (error) {
+        return {
+            isError: true,
+            message: error.message
+        }
+    }
+}
 
 
 /***
