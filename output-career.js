@@ -117,7 +117,6 @@ try {
     let endingHTML = '</article>';
 
 
-    let titleString = '<p class="card-title mb-0 title">' + title + '</p>';
     let departmentString = '<p class="card-text mb-0 division">' + department + '</p>';
     let streetAddressString = '<p class="card-text mb-0 address">' + streetAddress + '</p>';
     let phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
@@ -140,6 +139,16 @@ try {
         (directoryBioDict.emailAddress.content && directoryBioDict.contentName.content) ?
         '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.contentName.content + '">Contact ' + directoryBioDict.fircontentNamestName.content + '</a></p>' :
         '<span class="card-link mb-0 email hidden visually-hidden">No valid email information provided</span>';
+
+
+
+
+    /**
+     * Parse for title
+     */
+     let titleString = (directoryBioDict.title.content) ?
+        '<p class="card-title mb-0 title">' + directoryBioDict.title.content + '</p>' :
+        '<span class="card-title mb-0 title hidden visually-hidden">No valid title provided</span>';
 
 
 
