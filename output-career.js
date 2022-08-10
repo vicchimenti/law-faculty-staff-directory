@@ -14,7 +14,102 @@
 
 
 
+/***
+ *      Import T4 Utilities
+ */
+// importClass(com.terminalfour.media.IMediaManager);
+// importClass(com.terminalfour.spring.ApplicationContextProvider);
+importClass(com.terminalfour.publish.utils.BrokerUtils);
+// importClass(com.terminalfour.media.utils.ImageInfo);
+
+
+
+
+/***
+ *      Extract values from T4 element tags
+ *      and confirm valid existing content item field
+ */
+function getContentValues(tag) {
+    try {
+        let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
+        return {
+            isError: false,
+            content: _tag == '' ? null : _tag
+        }
+    } catch (error) {
+        return {
+            isError: true,
+            message: error.message
+        }
+    }
+}
+
+
+
+
+/***
+ *      Write the document
+ */
+function writeDocument(array) {
+
+    for (let i = 0; i < array.length; i++) {
+
+        document.write(array[i]);
+    }
+}
+
+
+
+
+
+
+
+
+    /***
+     *  Main
+     */
+    try {
+
+
+        /***
+         *      Dictionary of content
+         * */
+        let departmentBioDict = {
+
+            contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
+            fullName: getContentValues('<t4 type="content" name="Name of Faculty or Staff Member" output="normal" modifiers="striptags,htmlentities" />'),
+            lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
+            firstName: getContentValues('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />'),
+            pronouns: getContentValues('<t4 type="content" name="Pronouns" output="normal" modifiers="striptags,htmlentities" />'),
+            positionTitle: getContentValues('<t4 type="content" name="Position Title(s)" output="normal" modifiers="striptags,htmlentities" />'),
+            college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
+            description: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="striptags,htmlentities" />'),
+            officePhone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
+            emailAddress: getContentValues('<t4 type="content" name="Email Address" output="normal" modifiers="striptags,htmlentities,encode_emails" />'),
+            bldgRoom: getContentValues('<t4 type="content" name="Building/Room Number" output="normal" modifiers="striptags,htmlentities" />'),
+            departments: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
+            primaryImagePath: getContentValues('<t4 type="content" name="Photo" output="normal" formatter="path/*" />'),
+            fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Name" modifiers="striptags,htmlentities" />'),
+            contentId: getContentValues('<t4 type="meta" meta="content_id" />')
+
+        };
+
+
+
+
+/***
+ *  Main
+ */
 try {
+
+    /***
+     *      Dictionary of content
+     * */
+    let directoryBioDict = {
+
+        contentName: getContentValues
+        
+    }
 
     /***
      *  Assign local variables from the content type's fields
