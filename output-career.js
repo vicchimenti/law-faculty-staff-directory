@@ -195,6 +195,17 @@ try {
 
 
 
+    /**
+     * Parse for address
+     */
+    let streetAddressString = (directoryBioDict.streetAddress.content) ?
+        '<p class="card-text mb-0 address">' + directoryBioDict.streetAddress.content + '</p>' :
+        '<span class="card-text mb-0 address">No valid address provided</span>';
+
+
+
+
+
     /***
      *  write hidden search fields
      * 
