@@ -190,7 +190,7 @@ try {
      *  write document once
      * 
      * */
-        writeDocument(
+    writeDocument (
         [
             beginningHTML,
             openRow,
