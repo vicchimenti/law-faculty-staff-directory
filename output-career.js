@@ -144,15 +144,21 @@ try {
     let hiddenFields = '';
     let openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     let closeHiddenFields = '</div>';
-
     let openCardBody = '<div class="card-body">';
     let closeCardBody = '</div>';
     let endingHTML = '</article>';
 
 
 
-    let beginningHTML = '<article class="StaffListBox card w-100 border-0" id="directory' + contentID + '" aria-label="' + firstName + ' ' + lastName + '">';
 
+    /**
+     * Define wrapper
+     */
+    let beginningHTML = (directoryBioDict.firstName.content && directoryBioDict.lastName.content) ?
+        '<article class="StaffListBox card w-100 border-0" id="directory' + directoryBioDict.contentID.content + '" aria-label="' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '">' :
+        (directoryBioDict.contentName.content) ?
+        '<article class="StaffListBox card w-100 border-0" id="directory' + directoryBioDict.contentID.content + '" aria-label="' + directoryBioDict.contentName.content + '">' :
+        '<article class="StaffListBox card w-100 border-0 hidden visually-hidden">';
 
 
 
