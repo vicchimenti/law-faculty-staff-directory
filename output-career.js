@@ -111,16 +111,33 @@ try {
     let hiddenFields = '';
     let openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     let closeHiddenFields = '</div>';
-    let emailAddressString = '<p class="card-link mb-0 email"><a href="mailto:' + emailAddress + '?subject=From your Directory Profile" title="Email ' + firstName + ' ' + lastName + '">Contact ' + firstName + '</a></p>';
+
+    let openCardBody = '<div class="card-body">';
+    let closeCardBody = '</div>';
+    let endingHTML = '</article>';
+
+
     let titleString = '<p class="card-title mb-0 title">' + title + '</p>';
     let departmentString = '<p class="card-text mb-0 division">' + department + '</p>';
     let streetAddressString = '<p class="card-text mb-0 address">' + streetAddress + '</p>';
     let phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
-    let openCardBody = '<div class="card-body">';
-    let closeCardBody = '</div>';
+
     let cardHeader = '<h3 class="card-header border-0">' + firstName + ' ' + lastName + '</h3>';
     let beginningHTML = '<article class="StaffListBox card w-100 border-0" id="directory' + contentID + '" aria-label="' + firstName + ' ' + lastName + '">';
-    let endingHTML = '</article>';
+
+
+
+
+
+    /**
+     * Parse for email address
+     */
+    let emailAddressString =
+        (directoryBioDict.emailAddress.content && directoryBioDict.firstName.content && directoryBioDict.lastName.content) ?
+        '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '">Contact ' + directoryBioDict.firstName.content + '</a></p>' :
+        (directoryBioDict.emailAddress.content && directoryBioDict.firstName.content && directoryBioDict.lastName.content) ?
+        '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '">Contact ' + directoryBioDict.firstName.content + '</a></p>' :
+         ;
 
 
 
