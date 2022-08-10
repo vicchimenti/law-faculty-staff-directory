@@ -238,8 +238,8 @@ try {
      *  write hidden search fields
      * 
      * */
-    if (affiliation != "") {
-        let affiliationHidden = '<span class="visually-hidden affiliation">' + affiliation + '</span>';
+    if (directoryBioDict.affiliation.content) {
+        let affiliationHidden = '<span class="visually-hidden affiliation">' + directoryBioDict.affiliation.content + '</span>';
         hiddenFields += affiliationHidden;
     }
 
