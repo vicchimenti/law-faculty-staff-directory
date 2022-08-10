@@ -150,7 +150,6 @@ try {
     let endingHTML = '</article>';
 
 
-    let phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
 
     let cardHeader = '<h3 class="card-header border-0">' + firstName + ' ' + lastName + '</h3>';
     let beginningHTML = '<article class="StaffListBox card w-100 border-0" id="directory' + contentID + '" aria-label="' + firstName + ' ' + lastName + '">';
@@ -200,6 +199,19 @@ try {
     let streetAddressString = (directoryBioDict.streetAddress.content) ?
         '<p class="card-text mb-0 address">' + directoryBioDict.streetAddress.content + '</p>' :
         '<span class="card-text mb-0 address hidden visually-hidden">No valid address provided</span>';
+
+
+
+
+    /**
+     * Parse for phone
+     */
+    let phoneString = (directoryBioDict.phone.content && directoryBioDict.firstName.content) ?
+        '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + directoryBioDict.phone.content + '" title="Call ' + directoryBioDict.firstName.content + '">' + directoryBioDict.phone.content + '</a></p>' :
+        (directoryBioDict.phone.content && directoryBioDict.contentName.content) ?
+        '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + directoryBioDict.phone.content + '" title="Call ' + directoryBioDict.contentName.content + '">' + directoryBioDict.phone.content + '</a></p>' :
+        '<span class="card-text mb-0 phone hidden visually-hidden"></span>' ;
+
 
 
 
