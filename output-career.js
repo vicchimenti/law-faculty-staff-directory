@@ -109,7 +109,7 @@ try {
 
         contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
         affiliation: getContentValues('<t4 type="content" name="Affiliation" output="normal" modifiers="striptags,htmlentities" />'),
-
+        department: getContentValues('<t4 type="content" name="Department" output="normal" modifiers="striptags,htmlentities" />'),
 
 
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
