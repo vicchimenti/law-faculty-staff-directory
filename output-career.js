@@ -150,7 +150,6 @@ try {
     let endingHTML = '</article>';
 
 
-    let streetAddressString = '<p class="card-text mb-0 address">' + streetAddress + '</p>';
     let phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
 
     let cardHeader = '<h3 class="card-header border-0">' + firstName + ' ' + lastName + '</h3>';
@@ -200,7 +199,7 @@ try {
      */
     let streetAddressString = (directoryBioDict.streetAddress.content) ?
         '<p class="card-text mb-0 address">' + directoryBioDict.streetAddress.content + '</p>' :
-        '<span class="card-text mb-0 address">No valid address provided</span>';
+        '<span class="card-text mb-0 address hidden visually-hidden">No valid address provided</span>';
 
 
 
