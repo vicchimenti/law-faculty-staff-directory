@@ -8,7 +8,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 6.0
+ *      @version 6.1
  */
 
 
@@ -61,42 +61,6 @@ function writeDocument(array) {
 
 
 
-
-
-
-
-    /***
-     *  Main
-     */
-    try {
-
-
-        /***
-         *      Dictionary of content
-         * */
-        let departmentBioDict = {
-
-            contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-            fullName: getContentValues('<t4 type="content" name="Name of Faculty or Staff Member" output="normal" modifiers="striptags,htmlentities" />'),
-            lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
-            firstName: getContentValues('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />'),
-            pronouns: getContentValues('<t4 type="content" name="Pronouns" output="normal" modifiers="striptags,htmlentities" />'),
-            positionTitle: getContentValues('<t4 type="content" name="Position Title(s)" output="normal" modifiers="striptags,htmlentities" />'),
-            college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
-            description: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="striptags,htmlentities" />'),
-            officePhone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
-            emailAddress: getContentValues('<t4 type="content" name="Email Address" output="normal" modifiers="striptags,htmlentities,encode_emails" />'),
-            bldgRoom: getContentValues('<t4 type="content" name="Building/Room Number" output="normal" modifiers="striptags,htmlentities" />'),
-            departments: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-            primaryImagePath: getContentValues('<t4 type="content" name="Photo" output="normal" formatter="path/*" />'),
-            fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Name" modifiers="striptags,htmlentities" />'),
-            contentId: getContentValues('<t4 type="meta" meta="content_id" />')
-
-        };
-
-
-
-
 /***
  *  Main
  */
@@ -116,7 +80,6 @@ try {
         title: getContentValues('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />'),
         phone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
         streetAddress: getContentValues('<t4 type="content" name="Street Address" output="normal" modifiers="striptags,htmlentities" />'),
-
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
         
     };
