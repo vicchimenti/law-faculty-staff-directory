@@ -48,6 +48,39 @@ function getContentValues(tag) {
 
 
 /***
+ *      Parse Department Field when multiple inputs exist
+ */
+function parseDepartment(dept, seperator) {
+
+    let departmentArray = dept.split(seperator);
+    let rawString = departmentArray[departmentArray.length - 1];
+
+    return parsedDepartment = (departmentArray.length > 1) ?
+        rawString.trim() :
+        dept;
+}
+
+
+
+
+/***
+ *      Clean Department Field
+ */
+function cleanDepartment(raw) {
+
+    let dash = "-";
+
+    let deptString = (raw.includes(dash)) ?
+        parseDepartment(raw, dash) :
+        raw;
+
+    return '<p class="card-text mb-0 division">' + deptString + '</p>';
+}
+
+
+
+
+/***
  *      Write the document
  */
 function writeDocument(array) {
@@ -117,7 +150,6 @@ try {
     let endingHTML = '</article>';
 
 
-    let departmentString = '<p class="card-text mb-0 division">' + department + '</p>';
     let streetAddressString = '<p class="card-text mb-0 address">' + streetAddress + '</p>';
     let phoneString = '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + phone + '" title="Call ' + firstName + '">' + phone + '</a></p>';
 
@@ -149,6 +181,16 @@ try {
      let titleString = (directoryBioDict.title.content) ?
         '<p class="card-title mb-0 title">' + directoryBioDict.title.content + '</p>' :
         '<span class="card-title mb-0 title hidden visually-hidden">No valid title provided</span>';
+
+
+
+
+    /**
+     * Parse for department
+     */
+    let departmentString = (directoryBioDict.department.content) ?
+        cleanDepartment(directoryBioDict.department.content) :
+        '<span class="card-text mb-0 division hidden visually-hidden">No valid department entered</span>';
 
 
 
