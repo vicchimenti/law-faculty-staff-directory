@@ -71,8 +71,16 @@ try {
 
     /* if content exists, it'll start at 0 or later, so process this */
     // if ((n >= 0)) {
+    
+    let departmentString = (directoryDict.department.content) ?
+        directoryDict.department.content :
+        "undefined";
 
-    if (directoryDict.positionTitle.content.includes(optionToTestFor) || directoryDict.department.content.includes(optionToTestFor)) {
+    let titleString = (directoryDict.positionTitle.content) ?
+        directoryDict.positionTitle.content :
+        "undefined";
+
+    if (departmentString.includes(optionToTestFor) || titleString.includes(optionToTestFor)) {
 
         var sw = new java.io.StringWriter();
         var t4w = new com.terminalfour.utils.T4StreamWriter(sw);
