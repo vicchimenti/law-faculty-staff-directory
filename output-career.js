@@ -112,7 +112,8 @@ try {
         department: getContentValues('<t4 type="content" name="Department" output="normal" modifiers="striptags,htmlentities" />'),
         emailAddress: getContentValues('<t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities,encode_emails" />'),
         firstName: getContentValues('<t4 type="content" name="FirstName" output="normal" modifiers="striptags,htmlentities" />'),
-        lastName:   getContentValues('<t4 type="content" name="LastName" output="normal" modifiers="striptags,htmlentities" />'),
+        lastName: getContentValues('<t4 type="content" name="LastName" output="normal" modifiers="striptags,htmlentities" />'),
+        title: getContentValues('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />'),
 
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
         
