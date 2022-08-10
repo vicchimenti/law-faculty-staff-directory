@@ -114,6 +114,7 @@ try {
         firstName: getContentValues('<t4 type="content" name="FirstName" output="normal" modifiers="striptags,htmlentities" />'),
         lastName: getContentValues('<t4 type="content" name="LastName" output="normal" modifiers="striptags,htmlentities" />'),
         title: getContentValues('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />'),
+        phone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
 
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
         
