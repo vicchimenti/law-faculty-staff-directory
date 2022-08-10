@@ -111,7 +111,7 @@ try {
         affiliation: getContentValues('<t4 type="content" name="Affiliation" output="normal" modifiers="striptags,htmlentities" />'),
         department: getContentValues('<t4 type="content" name="Department" output="normal" modifiers="striptags,htmlentities" />'),
         emailAddress: getContentValues('<t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities,encode_emails" />'),
-
+        firstName: getContentValues('<t4 type="content" name="FirstName" output="normal" modifiers="striptags,htmlentities" />'),
 
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
         
