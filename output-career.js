@@ -245,28 +245,6 @@ try {
 
 
     /***
-     *  Write the document once
-     * 
-     * */
-    // document.write(beginningHTML);
-    // document.write(cardHeader);
-    // document.write(openCardBody);
-    // document.write(titleString);
-    // document.write(departmentString);
-    // document.write(streetAddressString);
-    // document.write(phoneString);
-    // document.write(emailAddressString);
-    // document.write(closeCardBody);
-    // document.write(openHiddenFields);
-    // document.write(hiddenFields);
-    // document.write(closeHiddenFields);
-    // document.write(endingHTML);
-
-
-
-
-
-    /***
      *  write document once
      * 
      * */
@@ -287,7 +265,6 @@ try {
             endingHTML
         ]
     );
-
 
 
 
