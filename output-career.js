@@ -151,9 +151,20 @@ try {
 
 
 
-    let cardHeader = '<h3 class="card-header border-0">' + firstName + ' ' + lastName + '</h3>';
     let beginningHTML = '<article class="StaffListBox card w-100 border-0" id="directory' + contentID + '" aria-label="' + firstName + ' ' + lastName + '">';
 
+
+
+
+
+    /**
+     * Parse for name
+     */
+    let cardHeader = (directoryBioDict.firstName.content && directoryBioDict.lastName.content) ?
+        '<h3 class="card-header border-0">' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '</h3>' :
+        (directoryBioDict.contentName.content) ?
+        '<h3 class="card-header border-0">' + directoryBioDict.contentName.content + '</h3>' :
+        '<span class="card-header border-0 hidden visually-hidden">No valid name provided</span>';
 
 
 
