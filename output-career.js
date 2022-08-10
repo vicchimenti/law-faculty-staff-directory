@@ -232,8 +232,6 @@ try {
 
 
 
-
-
     /***
      *  write hidden search fields
      * 
@@ -250,19 +248,19 @@ try {
      *  Write the document once
      * 
      * */
-    document.write(beginningHTML);
-    document.write(cardHeader);
-    document.write(openCardBody);
-    document.write(titleString);
-    document.write(departmentString);
-    document.write(streetAddressString);
-    document.write(phoneString);
-    document.write(emailAddressString);
-    document.write(closeCardBody);
-    document.write(openHiddenFields);
-    document.write(hiddenFields);
-    document.write(closeHiddenFields);
-    document.write(endingHTML);
+    // document.write(beginningHTML);
+    // document.write(cardHeader);
+    // document.write(openCardBody);
+    // document.write(titleString);
+    // document.write(departmentString);
+    // document.write(streetAddressString);
+    // document.write(phoneString);
+    // document.write(emailAddressString);
+    // document.write(closeCardBody);
+    // document.write(openHiddenFields);
+    // document.write(hiddenFields);
+    // document.write(closeHiddenFields);
+    // document.write(endingHTML);
 
 
 
@@ -275,19 +273,17 @@ try {
     writeDocument (
         [
             beginningHTML,
-            openRow,
-            openImageWrapper,
-            imageString,
-            closeImageWrapper,
-            openBodyWrapper,
-            openBody,
-            titleLink,
+            cardHeader,
+            openCardBody,
             titleString,
-            subtitleString,
-            summaryBioString,
-            closeBody,
-            closeBodyWrapper,
-            closeRow,
+            departmentString,
+            streetAddressString,
+            phoneString,
+            emailAddressString,
+            closeCardBody,
+            openHiddenFields,
+            hiddenFields,
+            closeHiddenFields,
             endingHTML
         ]
     );
