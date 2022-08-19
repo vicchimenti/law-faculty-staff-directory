@@ -111,7 +111,7 @@ try {
         phone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
         streetAddress: getContentValues('<t4 type="content" name="Street Address" output="normal" modifiers="striptags,htmlentities" />'),
         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
-        
+
     };
 
 
@@ -173,7 +173,7 @@ try {
     /**
      * Parse for title
      */
-     let titleString = (directoryBioDict.title.content) ?
+    let titleString = (directoryBioDict.title.content) ?
         '<p class="card-title mb-0 title">' + directoryBioDict.title.content + '</p>' :
         '<span class="card-title mb-0 title hidden visually-hidden">No valid title provided</span>';
 
@@ -184,7 +184,8 @@ try {
      * Parse for department
      */
     let departmentString = (directoryBioDict.department.content) ?
-        cleanDepartment(directoryBioDict.department.content) :
+        '<p class="card-text mb-0 division">' + directoryBioDict.department.content + '</p>' :
+        // cleanDepartment(directoryBioDict.department.content) :
         '<span class="card-text mb-0 division hidden visually-hidden">No valid department entered</span>';
 
 
@@ -207,7 +208,7 @@ try {
         '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + directoryBioDict.phone.content + '" title="Call ' + directoryBioDict.firstName.content + '">' + directoryBioDict.phone.content + '</a></p>' :
         (directoryBioDict.phone.content && directoryBioDict.contentName.content) ?
         '<p class="card-text mb-0 phone"><a class="contactPhone" href="tel:' + directoryBioDict.phone.content + '" title="Call ' + directoryBioDict.contentName.content + '">' + directoryBioDict.phone.content + '</a></p>' :
-        '<span class="card-text mb-0 phone hidden visually-hidden"></span>' ;
+        '<span class="card-text mb-0 phone hidden visually-hidden"></span>';
 
 
 
@@ -228,7 +229,7 @@ try {
      *  write document once
      * 
      * */
-    writeDocument (
+    writeDocument(
         [
             beginningHTML,
             cardHeader,
