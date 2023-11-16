@@ -107,6 +107,7 @@ try {
         emailAddress: getContentValues('<t4 type="content" name="Email" output="normal" modifiers="striptags,htmlentities,encode_emails" />'),
         firstName: getContentValues('<t4 type="content" name="FirstName" output="normal" modifiers="striptags,htmlentities" />'),
         lastName: getContentValues('<t4 type="content" name="LastName" output="normal" modifiers="striptags,htmlentities" />'),
+        fullName: getContentValues('<t4 type="content" name="Full Name" output="normal" modifiers="striptags,htmlentities" />'),
         title: getContentValues('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />'),
         phone: getContentValues('<t4 type="content" name="Phone" output="normal" modifiers="striptags,htmlentities" />'),
         streetAddress: getContentValues('<t4 type="content" name="Street Address" output="normal" modifiers="striptags,htmlentities" />'),
