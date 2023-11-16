@@ -151,6 +151,8 @@ try {
      */
     let cardHeader = (directoryBioDict.firstName.content && directoryBioDict.lastName.content) ?
         '<h3 class="card-header border-0">' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '</h3>' :
+        (directoryBioDict.fullName.content) ?
+        '<h3 class="card-header border-0">' + directoryBioDict.fullName.content + '</h3>' :
         (directoryBioDict.contentName.content) ?
         '<h3 class="card-header border-0">' + directoryBioDict.contentName.content + '</h3>' :
         '<span class="card-header border-0 hidden visually-hidden">No valid name provided</span>';
