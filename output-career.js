@@ -168,8 +168,8 @@ try {
         '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.firstName.content + ' ' + directoryBioDict.lastName.content + '">Email ' + directoryBioDict.firstName.content + '</a></p>' :
         (directoryBioDict.emailAddress.content && directoryBioDict.firstName.content) ?
         '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.firstName.content + '">Email ' + directoryBioDict.firstName.content + '</a></p>' :
-        (directoryBioDict.emailAddress.content && directoryBioDict.contentName.content) ?
-        '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.contentName.content + '">Email ' + directoryBioDict.fircontentNamestName.content + '</a></p>' :
+        (directoryBioDict.emailAddress.content && directoryBioDict.lastName.content) ?
+        '<p class="card-link mb-0 email"><a href="mailto:' + directoryBioDict.emailAddress.content + '?subject=From your Directory Profile" title="Email ' + directoryBioDict.lastName.content + '">Email ' + directoryBioDict.lastName.content + '</a></p>' :
         '<span class="card-link mb-0 email hidden visually-hidden">No valid email information provided</span>';
 
 
